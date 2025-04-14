@@ -79,8 +79,8 @@ li {
   padding: 0 12px;
 }
 
-.text--purple {
-  color: #6030b1;
+.text--green {
+  color: #067c04;
 }
 
 section:nth-child(even) {
@@ -115,7 +115,7 @@ nav {
 }
 
 .nav__link--anchor-primary {
-  background-color: #6030b1;
+  background-color: #067c04;
   padding: 8px 20px;
   border-radius: 50px;
   color: white;
@@ -128,7 +128,7 @@ nav {
 
 .personal__logo {
   font-size: 24px;
-  color: #6030b1;
+  color: #098b46;
   margin: 0 12px;
   font-weight: bold
 }
@@ -181,8 +181,9 @@ nav {
   width: 100%;
 
   /* Improving my own picture */
-  transform: scale(1.5);
+  transform: scale(1.2);
   padding-top: 8px;
+  padding-right: 9px;
 }
 
 .about-me__info--title {
@@ -225,6 +226,7 @@ nav {
   width: 100%;
   animation: fade-in 1200ms 800ms backwards;
 }
+
 
 @keyframes fade-in {
   0% {
@@ -497,4 +499,63 @@ footer {
     text-align: center;
     margin: 12px 0;
   }
+}
+
+@media (max-width: 768px) {
+    nav {
+        height: 68px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .about-me__info--para {
+        font-size: 18px;
+    }
+
+    .language {
+        width: calc(100%/2);
+    }
+    
+    .project__description--para {
+        font-size: 14px;
+    }
+
+    .project__description {
+        left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav_links:not(:last-child) {
+        display: none;
+    }
+
+    .project__description {
+        padding: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .project__description--para {
+        display: none;
+    }
+
+    .project__description--links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__description--title {
+        font-size: 32px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .project__description--sub-title {
+        text-align: center;
+        margin: 12px 0;
+    }
 }
